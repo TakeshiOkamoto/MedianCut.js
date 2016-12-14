@@ -8,6 +8,7 @@ Japanese
 
 English
 
+```rb
 // *** Constructor   
 // First  argument : ImageData object  
 // Second argument : Return value of getColorInfo()  
@@ -20,6 +21,7 @@ MedianCut.run(value,true);
   
 // Number of colors after color reduction    
 alert(MedianCut.rep_color.length);  
+```
 
 ## Caution
 If the HTML file is not uploaded to the server, it may not work depending on browser specifications.
