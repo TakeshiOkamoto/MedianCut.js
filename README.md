@@ -17,7 +17,7 @@ var MedianCut = new TMedianCut(imagedata,colors);
 // *** Method  
 // First  argument : Number of colors (2 - 256)  
 // Second argument : Update pixel data (true or false)  
-MedianCut.run(value,true);  
+MedianCut.run(256,true);  
   
 // Number of colors after color reduction    
 alert(MedianCut.rep_color.length);  
