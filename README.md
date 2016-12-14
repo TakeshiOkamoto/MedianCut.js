@@ -19,8 +19,11 @@ var MedianCut = new TMedianCut(imagedata,colors);
 // Second argument : Update pixel data (true or false)  
 MedianCut.run(256,true);  
   
-// Number of colors after color reduction    
+// Number of colors after color reduction (for confirmation)   
 alert(MedianCut.rep_color.length);  
+
+// Draw to canvas　　
+context.putImageData(imagedata,0,0);
 ```
 
 ## Caution
