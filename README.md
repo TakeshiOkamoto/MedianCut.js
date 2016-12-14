@@ -9,6 +9,10 @@ Japanese
 English
 
 ```rb
+// *** Function 
+// First  argument : ImageData object  
+var colors = getColorInfo(imagedata);
+
 // *** Constructor   
 // First  argument : ImageData object  
 // Second argument : Return value of getColorInfo()  
@@ -19,6 +23,7 @@ var MedianCut = new TMedianCut(imagedata,colors);
 // Second argument : Update pixel data (true or false)  
 MedianCut.run(256,true);  
   
+// *** Property
 // Number of colors after color reduction (for confirmation)   
 alert(MedianCut.rep_color.length);  
 
