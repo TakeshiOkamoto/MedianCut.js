@@ -6,6 +6,7 @@
 /*     Copyright 2016 Takeshi Okamoto (Japan)     */
 /*                                                */
 /*     Released under the MIT license             */
+/*     https://github.com/TakeshiOkamoto/         */
 /*                                                */
 /*                            Date: 2016-12-14    */
 /**************************************************/
