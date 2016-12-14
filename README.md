@@ -4,7 +4,7 @@ High quality, median-cut algorithm, reduced color (Reduce the color of the image
 ## How to use 
 
 Japanese  
-[xxx](xxx)  
+[http://www.petitmonte.com/javascript/howto_mediancut_js.html](http://www.petitmonte.com/javascript/howto_mediancut_js.html)  
 
 English
 
