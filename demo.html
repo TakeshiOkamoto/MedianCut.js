@@ -1,0 +1,38 @@
+<script src="MedianCut.js"></script>
+<button onclick="median(256);">Median Cut(256 colors)</button> 
+<button onclick="median(64);">Median Cut(64 colors)</button> 
+<button onclick="median(16);">Median Cut(16 colors)</button> 
+<button onclick="median(2);">Median Cut(2 colors)</button> 
+<p>[Original image]</p>
+<img id="SrcImage" src="test.png">
+<p>[High quality result]</p>
+<canvas id="DstCanvas"></canvas>
+<script>
+  var src_img = document.getElementById("SrcImage");
+  var dst_canvas = document.getElementById("DstCanvas");
+  var dst_ctx = dst_canvas.getContext("2d");    
+  
+  function median(value){  
+        
+    // Drawing original image (元画像の描画)
+    dst_canvas.width  = src_img.width;
+    dst_canvas.height = src_img.height;        
+    dst_ctx.drawImage(src_img,0,0); 
+    
+    // Generate ImageData (ImageDataの生成)
+    var imagedata = dst_ctx.getImageData(0,0,dst_canvas.width,dst_canvas.height); 
+    
+    // Obtain color information of image (画像のカラー情報の取得)
+    var colors = getColorInfo(imagedata);
+    
+    // reduced color (減色)
+    var MedianCut = new TMedianCut(imagedata,colors);
+    MedianCut.run(value,true);  
+    
+    // After Colors (減色後の画像の色数)
+    alert(MedianCut.rep_color.length);
+    
+    // Draw to canvas (canvasへ描画)
+    dst_ctx.putImageData(imagedata,0,0);
+  }  
+</script>
