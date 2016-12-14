@@ -8,7 +8,7 @@ Japanese
 
 English
 
-<span style="color:green;">// *** Constructor</span>   
+// *** Constructor   
 // First  argument : ImageData object  
 // Second argument : Return value of getColorInfo()  
 var MedianCut = new TMedianCut(imagedata,colors);  
