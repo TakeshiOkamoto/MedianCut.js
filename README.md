@@ -1,5 +1,5 @@
 # MedianCut.js
-High quality, median-cut algorithm, reduced color (Reduce the color of the image).
+High quality, median-cut algorithm, color reduction (Reduce the color of the image).
 
 ## How to use 
 
